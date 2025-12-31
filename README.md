@@ -1,6 +1,11 @@
-# Running HTTPS Test Site
+# Remote Control Presentation
+Remote Control Presentation - Control your slides from your phone via web interface;
 
-Steps for local HTTPS server launch (on macOS):
+# Attention! if you have macos, then allow accessibility for ide 🚨
+
+# Running HTTPS Site
+
+Steps for local HTTPS server launch:
 
 1. Install dependencies:
 
