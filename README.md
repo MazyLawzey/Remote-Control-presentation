@@ -1,5 +1,6 @@
 # Remote Control Presentation
 Remote Control Presentation - Control your slides from your phone via web interface;
+If you have an improved version, I will be glad to see it in the pull request.
 
 # Attention! if you have macos, then allow accessibility for ide 🚨
 
