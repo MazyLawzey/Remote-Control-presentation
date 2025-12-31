@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="left-btn">
+            <button id="left"><</button>
+        </div>
+        <div id="right-btn">
+            <button id="right">></button>
+        </div>
+    </main>
+    <script>
+        const leftBtn = document.getElementById('left');
+        const rightBtn = document.getElementById('right');
+        
+        leftBtn.addEventListener('click', async () => {
+            try {
+                const response = await fetch('/left', { method: 'POST' });
+                const data = await response.json();
+                console.log('Left response:', data);
+            } catch (err) {
+                console.error('Left error:', err);
+            }
+        });
+        
+        rightBtn.addEventListener('click', async () => {
+            try {
+                const response = await fetch('/right', { method: 'POST' });
+                const data = await response.json();
+                console.log('Right response:', data);
+            } catch (err) {
+                console.error('Right error:', err);
+            }
+        });
+    </script>
+</body>
+</html>
